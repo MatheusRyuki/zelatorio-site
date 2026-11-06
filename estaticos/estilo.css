@@ -132,3 +132,34 @@ details p { margin: 10px 0 0; }
   .tabela th { background: #fff !important; color: #000; border-bottom: 2px solid #000; }
   a { color: #000; text-decoration: none; }
 }
+
+/* Modelo para imprimir (folha da rotina do zelador) */
+.so-impressao { display: none; }
+.folha { border: 1px solid var(--borda); border-radius: 12px; padding: 22px; margin: 22px 0; background: #fff; }
+.folha h2 { font-size: 19px; margin: 20px 0 4px; }
+.folha-campos { display: flex; flex-wrap: wrap; gap: 14px 28px; font-size: 15px; }
+.folha-campos span { flex: 1 1 200px; border-bottom: 1px solid #6B7280; padding-bottom: 4px; }
+.folha-tabela { font-size: 14px; margin: 8px 0 14px; }
+.folha-tabela th, .folha-tabela td { padding: 7px 8px; }
+.folha-tabela .marca { text-align: center; white-space: nowrap; width: 62px; }
+.folha-tabela .campo { width: 96px; border-left: 1px solid var(--borda); }
+.caixa { display: inline-block; width: 15px; height: 15px; border: 1.5px solid #374151; border-radius: 3px; vertical-align: middle; }
+.folha-linhas div { border-bottom: 1px solid #9CA3AF; height: 28px; }
+.folha-rodape { font-size: 12px; color: var(--cinza); margin: 14px 0 0; line-height: 1.4; }
+@media print {
+  .so-impressao { display: block; }
+  .pagina-modelo { padding: 0; }
+  .folha { border: 0; border-radius: 0; padding: 0; margin: 0; }
+  .folha-titulo { font-size: 14pt; font-weight: 700; margin: 0 0 8pt; }
+  .folha-campos { font-size: 10pt; }
+  .folha h2 { font-size: 11pt; margin: 9pt 0 2pt; color: #000; }
+  .folha-tabela { font-size: 8.5pt; line-height: 1.25; margin: 2pt 0 4pt; }
+  .folha-tabela th, .folha-tabela td { padding: 2.5pt 4pt; }
+  .folha-tabela td { border-bottom: 1px solid #9CA3AF; }
+  .folha-tabela tr:nth-child(even) td { background: #fff; }
+  .folha-tabela tr { break-inside: avoid; }
+  .folha-tabela .campo { border-left: 1px solid #9CA3AF; }
+  .caixa { width: 10pt; height: 10pt; }
+  .folha-linhas div { height: 18pt; }
+  .folha-rodape { font-size: 7.5pt; color: #000; margin-top: 8pt; }
+}
