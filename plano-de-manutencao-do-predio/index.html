@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plano de manutenção do prédio: monte o seu e imprima | Zelatório</title>
+<meta name="description" content="Marque o que o prédio tem e imprima o plano de manutenção: o que fazer toda semana, todo mês e todo ano, e quem faz. Grátis, sem cadastro.">
+<link rel="canonical" href="https://zelatorio.com.br/plano-de-manutencao-do-predio/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Zelatório">
+<meta property="og:title" content="Plano de manutenção do prédio: monte o seu e imprima | Zelatório">
+<meta property="og:description" content="Marque o que o prédio tem e imprima o plano de manutenção: o que fazer toda semana, todo mês e todo ano, e quem faz. Grátis, sem cadastro.">
+<meta property="og:url" content="https://zelatorio.com.br/plano-de-manutencao-do-predio/">
+<meta property="og:image" content="https://zelatorio.com.br/estaticos/img/og.png">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0E5E6F">
+<link rel="icon" href="/estaticos/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/estaticos/estilo.css">
+
+</head>
+<body>
+<header class="topo">
+  <div class="container topo-in">
+    <a class="logo" href="/"><img src="/estaticos/favicon.svg" alt="" width="30" height="30">Zelatório</a>
+    <nav aria-label="Principal">
+      <a href="/kit/">Kit</a>
+      <a href="/checklist/">Checklists</a>
+      <a href="/artigos/">Artigos</a>
+      <a class="nav-cta" href="/lista-de-espera/">Lista de espera do app</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<style>
+  .escolha { border: 1px solid var(--borda); border-radius: 12px; padding: 16px 18px; margin: 18px 0 8px; background: #fff; }
+  .escolha h3 { font-size: 15px; color: var(--azul); margin: 14px 0 6px; }
+  .escolha h3:first-of-type { margin-top: 4px; }
+  .escolha-grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 4px 16px; }
+  .escolha label { display: flex; gap: 8px; align-items: flex-start; font-size: 15px; line-height: 1.35; padding: 3px 0; cursor: pointer; }
+  .escolha input { width: 18px; height: 18px; margin: 1px 0 0; flex: 0 0 auto; }
+  .plano-acoes { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 14px 0 4px; }
+  .plano-contagem { font-weight: 700; color: var(--azul-escuro); margin: 12px 0 0; }
+  .col-papel { display: none; }
+  @media (max-width: 640px) {
+    .escolha { padding: 14px; }
+    .escolha-grade { grid-template-columns: 1fr 1fr; gap: 0 10px; }
+    .escolha label { font-size: 14px; gap: 6px; }
+    .escolha input { width: 16px; height: 16px; }
+  }
+  @media print {
+    .col-papel { display: table-cell; width: 70pt; border-left: 1px solid #9CA3AF; }
+    .bloco { break-inside: auto; }
+  }
+</style>
+<div class="container pagina-modelo">
+  <p class="trilha nao-imprimir"><a href="/">Início</a> › <a href="/checklist/">Checklists</a> › Plano do prédio</p>
+  <h1 class="nao-imprimir" style="color:var(--azul-escuro); margin-top:6px">Monte o plano de manutenção do seu prédio</h1>
+  <p class="sub nao-imprimir" style="max-width:760px">Marque o que o seu prédio tem, e o plano aparece logo abaixo, numa folha: o que fazer toda semana, todo mês e todo ano, e quem faz cada coisa. São 53 atividades de referência: as dos checklists do site e as gerais do prédio, como o AVCB, o seguro e o telhado. É grátis, não pede cadastro e não guarda o que você marca.</p>
+
+  <div id="escolha" class="escolha nao-imprimir" hidden>
+    <p style="margin:0"><strong>1. O que o prédio tem.</strong> Desmarque o que ele não tem, como piscina, gerador ou elevador. <a href="#plano">Pular para o plano</a></p>
+    
+    <h3>Água e esgoto</h3>
+    <div class="escolha-grade">
+      <label><input type="checkbox" value="0" checked> Reservatórios e cisternas</label>
+      <label><input type="checkbox" value="1" checked> Água potável</label>
+      <label><input type="checkbox" value="2" checked> Bombas de recalque</label>
+      <label><input type="checkbox" value="3" checked> Bombas de drenagem e águas pluviais</label>
+      <label><input type="checkbox" value="4" checked> Calhas, ralos e grelhas</label>
+      <label><input type="checkbox" value="5" checked> Registros e válvulas</label>
+      <label><input type="checkbox" value="6" checked> Hidrômetros</label>
+      
+    </div>
+    
+    <h3>Incêndio</h3>
+    <div class="escolha-grade">
+      <label><input type="checkbox" value="7" checked> Extintores</label>
+      <label><input type="checkbox" value="8" checked> Hidrantes e mangueiras</label>
+      <label><input type="checkbox" value="9" checked> Mangueiras de incêndio</label>
+      <label><input type="checkbox" value="10" checked> Bomba de incêndio</label>
+      <label><input type="checkbox" value="11" checked> Iluminação de emergência</label>
+      <label><input type="checkbox" value="12" checked> Alarme e detectores</label>
+      <label><input type="checkbox" value="13" checked> Rotas de fuga</label>
+      <label><input type="checkbox" value="14" checked> AVCB / CLCB</label>
+      
+    </div>
+    
+    <h3>Elétrica</h3>
+    <div class="escolha-grade">
+      <label><input type="checkbox" value="15" checked> Quadros elétricos</label>
+      <label><input type="checkbox" value="16" checked> Iluminação das áreas comuns</label>
+      <label><input type="checkbox" value="17" checked> SPDA (para-raios)</label>
+      <label><input type="checkbox" value="18" checked> Gerador</label>
+      <label><input type="checkbox" value="19" checked> Nobreaks e baterias</label>
+      
+    </div>
+    
+    <h3>Elevadores</h3>
+    <div class="escolha-grade">
+      <label><input type="checkbox" value="20" checked> Elevadores</label>
+      
+    </div>
+    
+    <h3>Climatização e ventilação</h3>
+    <div class="escolha-grade">
+      <label><input type="checkbox" value="21" checked> Ar-condicionado das áreas comuns</label>
+      <label><input type="checkbox" value="22" checked> Exaustão e pressurização</label>
+      
+    </div>
+    
+    <h3>Gás</h3>
+    <div class="escolha-grade">
+      <label><input type="checkbox" value="23" checked> Central de gás</label>
+      <label><input type="checkbox" value="24" checked> Rede de gás</label>
+      
+    </div>
+    
+    <h3>Estrutura e fachada</h3>
+    <div class="escolha-grade">
+      <label><input type="checkbox" value="25" checked> Fachada e estrutura</label>
+      <label><input type="checkbox" value="26" checked> Inspeção predial</label>
+      <label><input type="checkbox" value="27" checked> Impermeabilização</label>
+      <label><input type="checkbox" value="28" checked> Telhado e cobertura</label>
+      
+    </div>
+    
+    <h3>Portões e acesso</h3>
+    <div class="escolha-grade">
+      <label><input type="checkbox" value="29" checked> Portões automáticos</label>
+      <label><input type="checkbox" value="30" checked> Interfone, CFTV e controle de acesso</label>
+      <label><input type="checkbox" value="31" checked> Cercas e alarmes perimetrais</label>
+      
+    </div>
+    
+    <h3>Lazer e áreas comuns</h3>
+    <div class="escolha-grade">
+      <label><input type="checkbox" value="32" checked> Piscina</label>
+      <label><input type="checkbox" value="33" checked> Playground</label>
+      <label><input type="checkbox" value="34" checked> Academia</label>
+      <label><input type="checkbox" value="35" checked> Controle de pragas</label>
+      <label><input type="checkbox" value="36" checked> Jardins</label>
+      
+    </div>
+    
+    <h3>Documentos</h3>
+    <div class="escolha-grade">
+      <label><input type="checkbox" value="37" checked> Laudos, certificados e contratos</label>
+      <label><input type="checkbox" value="38" checked> Seguro do condomínio</label>
+      <label><input type="checkbox" value="39" checked> Plano de manutenção</label>
+      
+    </div>
+    
+  </div>
+
+  <p class="nao-imprimir" style="margin:20px 0 0"><strong>2. O plano do prédio.</strong> <span id="contagem" class="plano-contagem">53 atividades de 40 itens</span></p>
+  <div class="plano-acoes nao-imprimir">
+    <button onclick="window.print()" class="botao botao-destaque" style="cursor:pointer">Imprimir ou salvar em PDF</button>
+    <a id="zap" class="botao botao-secundario" href="https://wa.me/?text=Plano%20de%20manuten%C3%A7%C3%A3o%20do%20pr%C3%A9dio%2C%20para%20imprimir%3A%20https%3A//zelatorio.com.br/plano-de-manutencao-do-predio/" rel="noopener" target="_blank">Enviar pelo WhatsApp</a>
+  </div>
+  <p class="legenda nao-imprimir">Para salvar em PDF, clique em imprimir e escolha "Salvar como PDF" no lugar da impressora. O botão do WhatsApp manda o endereço do plano com o que você marcou, para o zelador ou o conselho abrirem no celular.</p>
+
+  <div id="plano" class="folha">
+    <p class="so-impressao folha-titulo">Plano de manutenção do prédio</p>
+    <div class="folha-campos"><span>Condomínio:</span><span>Ano:</span><span>Síndico:</span></div>
+    
+    <div class="bloco">
+      <h2>Toda semana</h2>
+      <div class="rolagem">
+      <table class="tabela folha-tabela">
+        <thead><tr><th>Item</th><th>O que fazer</th><th>Frequência</th><th>Quem faz</th><th class="col-papel">Última vez</th><th class="col-papel">Próxima</th></tr></thead>
+        <tbody>
+        
+          <tr data-n="2"><td><a href="/checklist/bombas-de-recalque/">Bombas de recalque</a></td><td>Verificar ruídos, vazamentos e acionamento automático</td><td>Semanal</td><td>Zelador</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="16"><td><a href="/checklist/iluminacao-das-areas-comuns/">Iluminação das áreas comuns</a></td><td>Verificar lâmpadas, sensores de presença e temporizadores</td><td>Semanal</td><td>Zelador</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="32"><td><a href="/checklist/piscina/">Piscina</a></td><td>Medir e corrigir cloro e pH da água</td><td>Semanal (diária no verão)</td><td>Piscineiro</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+        </tbody>
+      </table>
+      </div>
+    </div>
+    
+    <div class="bloco">
+      <h2>Todo mês</h2>
+      <div class="rolagem">
+      <table class="tabela folha-tabela">
+        <thead><tr><th>Item</th><th>O que fazer</th><th>Frequência</th><th>Quem faz</th><th class="col-papel">Última vez</th><th class="col-papel">Próxima</th></tr></thead>
+        <tbody>
+        
+          <tr data-n="0"><td><a href="/checklist/reservatorios-e-cisternas/">Reservatórios e cisternas</a></td><td>Conferir tampas, boias, extravasores e vedação</td><td>Mensal</td><td>Zelador</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="2"><td><a href="/checklist/bombas-de-recalque/">Bombas de recalque</a></td><td>Revezar as bombas (alternar a bomba em uso)</td><td>Mensal</td><td>Zelador</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="3"><td><a href="/checklist/bombas-de-drenagem-e-aguas-pluviais/">Bombas de drenagem e águas pluviais</a></td><td>Testar bombas, boias e poço de drenagem</td><td>Mensal</td><td>Zelador</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="6"><td><a href="/checklist/hidrometros/">Hidrômetros</a></td><td>Ler hidrômetros e comparar o consumo (vazamentos ocultos)</td><td>Mensal</td><td>Zelador</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="7"><td><a href="/checklist/extintores/">Extintores</a></td><td>Inspeção visual: lacre, manômetro, validade, acesso e sinalização</td><td>Mensal</td><td>Zelador</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="8"><td><a href="/checklist/hidrantes-e-mangueiras/">Hidrantes e mangueiras</a></td><td>Inspeção visual de abrigos, mangueiras, esguichos e registros</td><td>Mensal</td><td>Zelador</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="10"><td><a href="/checklist/bomba-de-incendio/">Bomba de incêndio</a></td><td>Testar a partida e o funcionamento da bomba de incêndio</td><td>Mensal</td><td>Zelador ou empresa</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="11"><td><a href="/checklist/iluminacao-de-emergencia/">Iluminação de emergência</a></td><td>Testar o acendimento das luminárias de emergência</td><td>Mensal</td><td>Zelador</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="13"><td><a href="/checklist/rotas-de-fuga/">Rotas de fuga</a></td><td>Portas corta-fogo fechando sozinhas, rotas desobstruídas e sinalizadas</td><td>Mensal</td><td>Zelador</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="15"><td><a href="/checklist/quadros-eletricos/">Quadros elétricos</a></td><td>Inspeção visual: aquecimento, ruído, cheiro e identificação dos circuitos</td><td>Mensal</td><td>Zelador</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="18"><td><a href="/checklist/gerador/">Gerador</a></td><td>Testar a partida e o funcionamento do gerador</td><td>Mensal</td><td>Zelador ou empresa</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="20"><td><a href="/checklist/elevadores/">Elevadores</a></td><td>Manutenção preventiva por empresa habilitada</td><td>Mensal</td><td>Empresa especializada</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="20"><td><a href="/checklist/elevadores/">Elevadores</a></td><td>Testar interfone ou alarme de emergência da cabina</td><td>Mensal</td><td>Zelador</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="21"><td><a href="/checklist/ar-condicionado-das-areas-comuns/">Ar-condicionado das áreas comuns</a></td><td>Limpar filtros dos aparelhos</td><td>Mensal</td><td>Zelador treinado ou empresa</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="22"><td><a href="/checklist/exaustao-e-pressurizacao/">Exaustão e pressurização</a></td><td>Testar exaustão da garagem e pressurização de escadas</td><td>Mensal</td><td>Zelador</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="23"><td><a href="/checklist/central-de-gas/">Central de gás</a></td><td>Inspeção visual do abrigo, ventilação, sinalização e vazamentos</td><td>Mensal</td><td>Zelador</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="29"><td><a href="/checklist/portoes-automaticos/">Portões automáticos</a></td><td>Lubrificar, ajustar e testar sensores e fins de curso</td><td>Mensal</td><td>Empresa especializada</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="30"><td><a href="/checklist/interfone-cftv-e-controle-de-acesso/">Interfone, CFTV e controle de acesso</a></td><td>Testar câmeras, gravação, interfones e controles</td><td>Mensal</td><td>Zelador</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="31"><td><a href="/checklist/cercas-e-alarmes-perimetrais/">Cercas e alarmes perimetrais</a></td><td>Testar cerca elétrica e alarmes</td><td>Mensal</td><td>Zelador</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="32"><td><a href="/checklist/piscina/">Piscina</a></td><td>Limpar filtros e revisar a casa de máquinas da piscina</td><td>Mensal</td><td>Piscineiro</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="33"><td><a href="/checklist/playground/">Playground</a></td><td>Inspecionar brinquedos, fixações e piso de amortecimento</td><td>Mensal</td><td>Zelador</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="34"><td><a href="/checklist/academia/">Academia</a></td><td>Inspecionar aparelhos, cabos e estofados</td><td>Mensal</td><td>Zelador ou empresa</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="36"><td>Jardins</td><td>Poda, adubação e conferência da irrigação</td><td>Mensal</td><td>Jardineiro</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+        </tbody>
+      </table>
+      </div>
+    </div>
+    
+    <div class="bloco">
+      <h2>A cada 3 meses</h2>
+      <div class="rolagem">
+      <table class="tabela folha-tabela">
+        <thead><tr><th>Item</th><th>O que fazer</th><th>Frequência</th><th>Quem faz</th><th class="col-papel">Última vez</th><th class="col-papel">Próxima</th></tr></thead>
+        <tbody>
+        
+          <tr data-n="12"><td><a href="/checklist/alarme-e-detectores/">Alarme e detectores</a></td><td>Testar alarme, acionadores e detectores de incêndio</td><td>Trimestral</td><td>Empresa especializada</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="19"><td><a href="/checklist/nobreaks-e-baterias/">Nobreaks e baterias</a></td><td>Testar nobreaks e baterias de portaria, CFTV e portões</td><td>Trimestral</td><td>Empresa especializada</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="37"><td>Laudos, certificados e contratos</td><td>Conferir validade de laudos, AVCB, seguro e contratos de manutenção</td><td>Trimestral</td><td>Síndico</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+        </tbody>
+      </table>
+      </div>
+    </div>
+    
+    <div class="bloco">
+      <h2>A cada 6 meses</h2>
+      <div class="rolagem">
+      <table class="tabela folha-tabela">
+        <thead><tr><th>Item</th><th>O que fazer</th><th>Frequência</th><th>Quem faz</th><th class="col-papel">Última vez</th><th class="col-papel">Próxima</th></tr></thead>
+        <tbody>
+        
+          <tr data-n="0"><td><a href="/checklist/reservatorios-e-cisternas/">Reservatórios e cisternas</a></td><td>Limpeza e desinfecção dos reservatórios e cisternas</td><td>Semestral</td><td>Empresa especializada</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="1"><td>Água potável</td><td>Análise de potabilidade da água</td><td>Semestral</td><td>Laboratório</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="2"><td><a href="/checklist/bombas-de-recalque/">Bombas de recalque</a></td><td>Manutenção preventiva das bombas</td><td>Semestral</td><td>Empresa especializada</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="4"><td>Calhas, ralos e grelhas</td><td>Limpar calhas, ralos, grelhas e caixas de passagem</td><td>Semestral</td><td>Zelador</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="5"><td>Registros e válvulas</td><td>Abrir e fechar registros para evitar travamento</td><td>Semestral</td><td>Zelador</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="9"><td><a href="/checklist/mangueiras-de-incendio/">Mangueiras de incêndio</a></td><td>Inspeção das mangueiras de incêndio (a manutenção completa é anual)</td><td>Semestral</td><td>Empresa especializada</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="11"><td><a href="/checklist/iluminacao-de-emergencia/">Iluminação de emergência</a></td><td>Testar a autonomia das baterias</td><td>Semestral</td><td>Zelador ou empresa</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="18"><td><a href="/checklist/gerador/">Gerador</a></td><td>Manutenção preventiva: óleo, filtros, baterias e combustível</td><td>Semestral</td><td>Empresa especializada</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="25"><td>Fachada e estrutura</td><td>Inspeção visual: fissuras, infiltrações e revestimento soltando</td><td>Semestral</td><td>Síndico ou zelador</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="35"><td>Controle de pragas</td><td>Dedetização e desratização</td><td>Semestral</td><td>Empresa licenciada</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+        </tbody>
+      </table>
+      </div>
+    </div>
+    
+    <div class="bloco">
+      <h2>Uma vez por ano</h2>
+      <div class="rolagem">
+      <table class="tabela folha-tabela">
+        <thead><tr><th>Item</th><th>O que fazer</th><th>Frequência</th><th>Quem faz</th><th class="col-papel">Última vez</th><th class="col-papel">Próxima</th></tr></thead>
+        <tbody>
+        
+          <tr data-n="7"><td><a href="/checklist/extintores/">Extintores</a></td><td>Inspeção técnica e manutenção de 2º nível por empresa registrada no Inmetro</td><td>Anual</td><td>Empresa especializada</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="15"><td><a href="/checklist/quadros-eletricos/">Quadros elétricos</a></td><td>Reaperto e inspeção por eletricista (termografia, se possível)</td><td>Anual</td><td>Profissional habilitado</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="17"><td><a href="/checklist/spda-para-raios/">SPDA (para-raios)</a></td><td>Inspeção visual de captores, cabos, conexões e corrosão</td><td>Anual</td><td>Zelador ou empresa</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="17"><td><a href="/checklist/spda-para-raios/">SPDA (para-raios)</a></td><td>Inspeção completa com medições e laudo (ART)</td><td>1 a 3 anos (anual é o mais seguro)</td><td>Profissional habilitado</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="20"><td><a href="/checklist/elevadores/">Elevadores</a></td><td>Relatório anual de inspeção, quando a prefeitura exigir (ex.: RIA em São Paulo)</td><td>Anual</td><td>Empresa especializada</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="21"><td><a href="/checklist/ar-condicionado-das-areas-comuns/">Ar-condicionado das áreas comuns</a></td><td>Manter o PMOC com responsável técnico, quando o prédio se enquadra</td><td>Anual</td><td>Profissional habilitado</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="24"><td><a href="/checklist/rede-de-gas/">Rede de gás</a></td><td>Teste de estanqueidade e inspeção da rede por empresa habilitada</td><td>Conforme distribuidora e lei local</td><td>Empresa especializada</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="27"><td>Impermeabilização</td><td>Inspeção de lajes, terraços, jardineiras e reservatórios</td><td>Anual</td><td>Zelador ou empresa</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="28"><td>Telhado e cobertura</td><td>Inspeção de telhas, rufos, fixações e antenas</td><td>Anual</td><td>Empresa especializada</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="38"><td>Seguro do condomínio</td><td>Renovar o seguro obrigatório da edificação</td><td>Anual</td><td>Síndico</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="39"><td>Plano de manutenção</td><td>Revisar o plano de manutenção e apresentar ao conselho</td><td>Anual</td><td>Síndico</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+        </tbody>
+      </table>
+      </div>
+    </div>
+    
+    <div class="bloco">
+      <h2>A cada alguns anos</h2>
+      <div class="rolagem">
+      <table class="tabela folha-tabela">
+        <thead><tr><th>Item</th><th>O que fazer</th><th>Frequência</th><th>Quem faz</th><th class="col-papel">Última vez</th><th class="col-papel">Próxima</th></tr></thead>
+        <tbody>
+        
+          <tr data-n="7"><td><a href="/checklist/extintores/">Extintores</a></td><td>Ensaio hidrostático dos extintores</td><td>Em até 5 anos</td><td>Empresa especializada</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="14"><td>AVCB / CLCB</td><td>Renovar o certificado do Corpo de Bombeiros (AVCB ou CLCB)</td><td>Conforme o estado</td><td>Profissional habilitado</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+          <tr data-n="26"><td>Inspeção predial</td><td>Inspeção predial completa com laudo de profissional habilitado</td><td>Conforme lei municipal</td><td>Profissional habilitado</td><td class="col-papel"></td><td class="col-papel"></td></tr>
+        
+        </tbody>
+      </table>
+      </div>
+    </div>
+    
+    <p class="folha-rodape">Plano montado em zelatorio.com.br/plano-de-manutencao-do-predio. Periodicidades são referências comuns de normas e do mercado. Valem primeiro o manual do fabricante, a legislação do seu estado e município, a orientação do responsável técnico e a convenção do condomínio. Este material não substitui laudos nem a ART de profissional habilitado.</p>
+  </div>
+
+  <div class="prosa nao-imprimir">
+    <h2>Como usar o plano</h2>
+    <ul>
+      <li>Confira cada frequência com o manual do fabricante, a regra do seu estado e do seu município e o responsável técnico do prédio. As frequências da folha são referências comuns, e não a regra do seu prédio.</li>
+      <li>Algumas podem ser mais curtas no seu prédio: em piscina coletiva, a vigilância sanitária da cidade pode exigir medir a água mais vezes que a folha diz, e o manual do fabricante ou a empresa podem pedir conferência mais frequente da bomba de incêndio, do gerador e dos aparelhos da academia. Vale sempre a regra mais rigorosa.</li>
+      <li>O zelador faz as verificações visuais e os testes simples. O que pede abrir equipamento, laudo ou ART é serviço de empresa especializada ou de profissional habilitado.</li>
+      <li>Na folha impressa, anote em "Última vez" a data de cada serviço e calcule a "Próxima" pela frequência. Guarde a nota fiscal, o relatório ou o laudo de cada serviço.</li>
+      <li>Clique no nome de um item para ver o checklist dele, com o que conferir em cada ronda.</li>
+    </ul>
+    <aside class="convite">
+      <h3>O que a folha não faz</h3>
+      <p>A folha mostra o que fazer e com que frequência, mas não lembra ninguém da data. O <strong>Kit Manutenção Predial</strong> traz a planilha do plano com 53 atividades que mostra o que está em dia e o que atrasou, os checklists do zelador, as etiquetas com QR Code e um guia para o síndico (R$ 47, pagamento único). E o app Zelatório, em desenvolvimento, vai avisar antes de cada prazo vencer: quem entra na lista de espera testa primeiro, e entrar é grátis.</p>
+      <div class="botoes">
+        <a class="botao botao-primario" href="/kit/">Conhecer o kit</a>
+        <a class="botao botao-secundario" href="/lista-de-espera/">Entrar na lista do app</a>
+      </div>
+    </aside>
+    <p class="aviso">Periodicidades são referências comuns de normas e do mercado. Valem primeiro o manual do fabricante, a legislação do seu estado e município, a orientação do responsável técnico e a convenção do condomínio. Este material não substitui laudos nem a ART de profissional habilitado.</p>
+  </div>
+</div>
+<script>
+(function () {
+  var escolha = document.getElementById('escolha');
+  if (!escolha || !document.querySelectorAll) return;
+  var caixas = escolha.querySelectorAll('input[type=checkbox]');
+  var linhas = document.querySelectorAll('#plano tr[data-n]');
+  var blocos = document.querySelectorAll('#plano .bloco');
+  var contagem = document.getElementById('contagem');
+  var zap = document.getElementById('zap');
+  var base = 'https://zelatorio.com.br/plano-de-manutencao-do-predio/';
+  escolha.hidden = false;
+  var m = location.hash.match(/sem=([0-9,]+)/);
+  if (m) {
+    var fora = m[1].split(',');
+    for (var i = 0; i < caixas.length; i++) {
+      if (fora.indexOf(caixas[i].value) >= 0) caixas[i].checked = false;
+    }
+  }
+  function atualizar() {
+    var semItem = {}, sem = [], itens = 0, ativ = 0, i;
+    for (i = 0; i < caixas.length; i++) {
+      if (caixas[i].checked) { itens++; } else { semItem[caixas[i].value] = true; sem.push(caixas[i].value); }
+    }
+    for (i = 0; i < linhas.length; i++) {
+      var some = !!semItem[linhas[i].getAttribute('data-n')];
+      linhas[i].hidden = some;
+      if (!some) ativ++;
+    }
+    for (i = 0; i < blocos.length; i++) {
+      blocos[i].hidden = !blocos[i].querySelector('tr[data-n]:not([hidden])');
+    }
+    contagem.textContent = ativ + (ativ === 1 ? ' atividade' : ' atividades') + ' de ' + itens + (itens === 1 ? ' item' : ' itens');
+    var sufixo = sem.length ? '#sem=' + sem.join(',') : '';
+    zap.href = 'https://wa.me/?text=' + encodeURIComponent('Plano de manutenção do prédio, para imprimir: ' + base + sufixo);
+    try { history.replaceState(null, '', sufixo || location.pathname + location.search); } catch (e) {}
+  }
+  for (var j = 0; j < caixas.length; j++) caixas[j].addEventListener('change', atualizar);
+  atualizar();
+})();
+</script>
+
+</main>
+<footer class="rodape">
+  <div class="container">
+    <div class="rodape-grade">
+      <div>
+        <h4>Zelatório</h4>
+        <p>O registro que prova que a manutenção do prédio foi feita.</p>
+      </div>
+      <div>
+        <h4>Para o síndico</h4>
+        <ul>
+          <li><a href="/kit/">Kit Manutenção Predial</a></li>
+          <li><a href="/checklist/">Checklists por equipamento</a></li>
+          <li><a href="/modelo-de-checklist-de-manutencao-predial/">Modelo de checklist para imprimir</a></li>
+          <li><a href="/artigos/">Artigos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Zelatório</h4>
+        <ul>
+          <li><a href="/lista-de-espera/">Lista de espera do app</a></li>
+          <li><a href="/privacidade/">Privacidade</a></li>
+          <li><a href="mailto:kaiyawebti@gmail.com">kaiyawebti@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/company/zelatorio/" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="aviso">As periodicidades deste site são referências comuns de normas e do mercado. Valem primeiro o manual do fabricante, a legislação do seu estado e município, a orientação do responsável técnico e a convenção do condomínio. O conteúdo não substitui laudos nem a ART de profissional habilitado.</p>
+    <p>© 2026 Zelatório · 34.510.992 MATHEUS RYUKI MEDEIROS KAIYA · CNPJ 34.510.992/0001-19 · Travessa WE-88, 1171, Cidade Nova, Ananindeua (PA), CEP 67140-290</p>
+  </div>
+</footer>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "82729e0b52314e8c9a26fd640fdbe688"}'></script>
+</body>
+</html>
